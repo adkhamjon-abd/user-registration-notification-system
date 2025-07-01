@@ -19,7 +19,9 @@ public class UserController {
         if (user == null){
             return ResponseEntity.badRequest().build();
         }
+        System.out.println("Controller accepted");
         User registeredUser = userService.register(user);
+        System.out.println("User returned" + registeredUser);
         return new ResponseEntity<>(registeredUser, HttpStatus.CREATED);
     }
 }
