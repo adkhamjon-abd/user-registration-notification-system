@@ -20,4 +20,7 @@ public class User {
     @JsonProperty("name")
     private String name;
 
+    @JsonProperty("email")
+    private String email;
+
 }

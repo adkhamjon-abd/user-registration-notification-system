@@ -1,4 +1,4 @@
-package com.adam.user_registration_notification_system;
+package com.adam.user_registration_notification_system.service;
 
 import com.adam.user_registration_notification_system.model.User;
 import com.adam.user_registration_notification_system.repository.UserRepository;
