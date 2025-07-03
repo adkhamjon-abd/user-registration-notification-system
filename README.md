@@ -65,7 +65,7 @@ Edit
 - Go to: `http://localhost:8080/h2-console`
 - JDBC URL: `jdbc:h2:mem:testdb`
 - Username: `sa`
-- Password: *(leave blank)*
+- Password: 
 
 ---
 
@@ -83,11 +83,5 @@ Edit
 - Spring Boot
 - H2 Database
 - Spring Events (`@EventListener`, `ApplicationEventPublisher`)
-
----
-
-## ✍️ Author
-
-Your Name – [your.email@example.com](mailto:your.email@example.com)
 
 ---
