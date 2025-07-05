@@ -20,11 +20,15 @@ public class AuditLog {
 
     @ManyToOne
     @JoinColumn(name = "user_id")
-    private Long userId;
+    private User user;
 
     private String action;
     private LocalDateTime timestamp;
 
+    public AuditLog(User user, String action) {
+        this.user = user;
+        this.action = action;
+    }
     @PrePersist
     public void onCreate(){
         timestamp = LocalDateTime.now();

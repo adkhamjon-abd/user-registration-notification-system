@@ -17,7 +17,9 @@ public class UserService {
     private ApplicationEventPublisher eventPublisher;
     public User register(User user){
         System.out.println("service accepted");
+        User userSaved = userRepository.save(user);
+
         eventPublisher.publishEvent(new UserRegisteredEvent(this, user));
-        return userRepository.save(user);
+        return userSaved;
     }
 }
